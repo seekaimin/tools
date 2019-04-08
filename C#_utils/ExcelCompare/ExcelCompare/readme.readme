@@ -1,0 +1,15 @@
+﻿BOM分析工具
+2017-09-04
+1 按区位分析子件是否焊接
+2 按子件统计数量
+
+注意事项
+修复Excel单元格读出文本长度不超过255:
+1 保存以下文本到  xxx.bat  文件
+2 以管理员身份运行 xxx.bat
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Jet\3.5\Engines\Excel" /v TypeGuessRows /d 0 /f 
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Jet\4.0\Engines\Excel" /v TypeGuessRows /d 0 /f 
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\12.0\Access Connectivity Engine\Engines\Excel" /v TypeGuessRows /d 0 /f 
+@pause
+
