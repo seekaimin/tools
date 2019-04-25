@@ -1,7 +1,8 @@
-#include "aes.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "common.h"
+#include "aes.h"
 /*
  * 32-bit integer manipulation macros (little endian)
  */

@@ -1,17 +1,8 @@
-#ifndef __DS_AS_AES_H__
-#define __DS_AS_AES_H__
-
-typedef	int BOOL;
-#define	TRUE	0
-#define	FALSE	1
+#ifndef __AES_H__
+#define __AES_H__
+#include "common.h"
 
 
-#undef NULL 
-#if defined(__cplusplus)
-#define NULL 0
-#else
-#define NULL ((void *)0)
-#endif
 //加密解密类型
 typedef enum _EN_CRYPT_TYPE
 {
