@@ -48,6 +48,6 @@ typedef struct _ST_CA_AES_CONTEXT
  * Key			密钥 (16字节密钥)
  * keyLen		密钥长度 
  */
-int AES_RunAes(EN_CRYPT_TYPE enType, EN_CRYPT_MODE enMode, PADDING_MODE padMode, unsigned char* input, unsigned char* output, unsigned int inputLen, unsigned int* outputLen, unsigned char* Key,  unsigned char keyLen);
+BOOL AES_RunAes(EN_CRYPT_TYPE enType, EN_CRYPT_MODE enMode, PADDING_MODE padMode, unsigned char* input, unsigned char* output, unsigned int inputLen, unsigned int* outputLen, unsigned char* Key,  unsigned char keyLen);
 #endif // AES_H
 

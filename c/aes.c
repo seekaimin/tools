@@ -715,7 +715,7 @@ BOOL AES_Decrypt(EN_CRYPT_MODE enMode, PADDING_MODE padMode, unsigned char* inpu
 }
 
 
-int AES_RunAes(EN_CRYPT_TYPE enType, EN_CRYPT_MODE enMode, PADDING_MODE padMode, unsigned char* input, unsigned char* output, unsigned int inputLen, unsigned int* outputLen, unsigned char* Key,  unsigned char keyLen)
+BOOL AES_RunAes(EN_CRYPT_TYPE enType, EN_CRYPT_MODE enMode, PADDING_MODE padMode, unsigned char* input, unsigned char* output, unsigned int inputLen, unsigned int* outputLen, unsigned char* Key,  unsigned char keyLen)
 {
     BOOL result = FALSE;
 	if(enType == CRYPT_TYPE_ENCRYPT)
@@ -728,19 +728,3 @@ int AES_RunAes(EN_CRYPT_TYPE enType, EN_CRYPT_MODE enMode, PADDING_MODE padMode,
 	}
     return result;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
